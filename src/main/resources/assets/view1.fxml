@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.project.Controller1">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #e6e6e6; -fx-border-width: 1px; -fx-border-color: black;" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goBack" prefHeight="60.0" prefWidth="58.0" style="-fx-background-color: null;" text="&lt;">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Label layoutX="224.0" layoutY="12.0" text="Encriptar arxiu">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="340.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0">
+         <children>
+            <Button fx:id="encriptButton" layoutX="203.0" layoutY="253.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="194.0" text="Encriptar arxiu">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Button>
+            <Label layoutX="163.0" layoutY="70.0" text="Clau pública:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="108.0" text="Arxiu:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="219.0" layoutY="142.0" text="Destí:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="publicKeyButton" layoutX="274.0" layoutY="71.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
+            <Button fx:id="fileButton" layoutX="274.0" layoutY="108.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
+            <Button fx:id="destinationButton" layoutX="274.0" layoutY="142.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
