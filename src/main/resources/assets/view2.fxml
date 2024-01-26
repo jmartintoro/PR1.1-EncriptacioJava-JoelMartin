@@ -44,7 +44,7 @@
                   <Font size="18.0" />
                </font>
             </Label>
-            <Button fx:id="publicKeyButton" layoutX="273.0" layoutY="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
+            <Button fx:id="privateKeyButton" layoutX="273.0" layoutY="107.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
             <Button fx:id="fileButton" layoutX="274.0" layoutY="71.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
             <Button fx:id="destinationButton" layoutX="274.0" layoutY="185.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="194.0" text="Seleccionar arxiu..." />
             <Label layoutX="162.0" layoutY="142.0" text="Contrasenya:">

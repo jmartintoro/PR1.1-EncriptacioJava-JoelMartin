@@ -61,15 +61,23 @@ public class Controller2 implements Initializable {
 
         desencriptarButton.setOnMouseClicked(e -> {
             if (privKey != null && file != null && destination != null) {
-                System.out.println("ENCRIPTAR");
+                System.out.println("DESENCRIPTAR");
 
-                String outputPath = System.getProperty("user.dir")+"/data/"+destination.getName();
+                String outputPath = System.getProperty("user.dir")+"/data/";
                 System.out.println(outputPath);
+
+                String password = psswd.getText();
                 try {
-                    KeyBasedFileProcessor.decryptFile(file.getAbsolutePath().toString(), privKey.getAbsolutePath().toString(), psswd.getText().toCharArray(), null);
+                    KeyBasedFileProcessor.decryptFile(file.getAbsolutePath().toString(), privKey.getAbsolutePath().toString(), password.toCharArray(), null);
                 } catch (Exception e1) {
+                    Main.status = false;
+                    UtilsViews.setViewAnimating("View3");
                     e1.printStackTrace();
                 }
+                System.out.println("DESENCRIPTAT!");
+
+                Main.status = true;
+                UtilsViews.setViewAnimating("View3");
             } else {
                 System.out.println("Faltan arxius per seleccionar");
             }

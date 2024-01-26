@@ -64,8 +64,14 @@ public class Controller1 implements Initializable {
                 try {
                     KeyBasedFileProcessor.encryptFile(outputPath, file.getAbsolutePath().toString(), pubKey.getAbsolutePath().toString(), true, true);
                 } catch (Exception e1) {
+                    Main.status = false;
+                    UtilsViews.setViewAnimating("View3");
                     e1.printStackTrace();
                 }
+                System.out.println("ENCRIPTAT!");
+                
+                Main.status = true;
+                UtilsViews.setViewAnimating("View3");
             } else {
                 System.out.println("Faltan arxius per seleccionar");
             }
